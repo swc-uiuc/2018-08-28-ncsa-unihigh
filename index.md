@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+venue: "National Center for Supercomputing Applications"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Room 1104, 1205 W. Clark Street, Urbana, IL 61801"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "us"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "40.114832,-88.225004" # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+humandate: "Aug 28 - Sep 27, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "3:15 pm - 5:15 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2018-08-28      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-09-27        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Samniqueka Halsey", "Neal Davis", "Maxim Belkin", "Elizabeth Wickes"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Madicken Munk", "Dena Strong"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["mbelkin@illinois.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: "https://pad.carpentries.org/2018-ncsa-unihigh"            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -45,11 +45,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -120,7 +115,7 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
+  macOS, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   {% if page.carpentry == "swc" %}
@@ -145,17 +140,9 @@ and our administrator may contact you if we need any extra information.</h4>
   The workshop organizers have checked that:
 </p>
 <ul>
-  <li>The room is wheelchair / scooter accessible.</li>
+  <li>The room is wheelchair accessible.</li>
   <li>Accessible restrooms are available.</li>
 </ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
-</p>
 
 {% comment %}
   CONTACT EMAIL ADDRESS
@@ -187,6 +174,7 @@ and our administrator may contact you if we need any extra information.</h4>
 {% comment %} 
  SURVEYS - DO NOT EDIT SURVEY LINKS 
 {% endcomment %}
+<!--
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "swc" %} 
@@ -201,7 +189,7 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endif %}
 
 <hr/>
-
+-->
 
 {% comment %}
   SCHEDULE
@@ -392,65 +380,6 @@ and our administrator may contact you if we need any extra information.</h4>
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
 
-<div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
-  <h3>Git</h3>
-  <p>
-    Git is a version control system that lets you track who made changes
-    to what when and has options for easily updating a shared or public
-    version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
-    web browser (current versions of Chrome, Firefox or Safari,
-    or Internet Explorer version 9 or above).
-  </p>
-  <p>
-    You will need an account at <a href="https://github.com/">github.com</a>
-    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-    you to create a GitHub account if you don't have one already.
-    Please consider what personal information you'd like to reveal. For
-    example, you may want to review these
-    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-      <p>
-        Git should be installed on your computer as part of your Bash
-        install (described above).
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-macosx">macOS</h4>
-      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-      <p>
-        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
-        by downloading and running the most recent "mavericks" installer from
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-        Because this installer is not signed by the developer, you may have to
-        right click (control click) on the .pkg file, click Open, and click
-        Open on the pop up window. 
-        After installing Git, there will not be anything in your <code>/Applications</code> folder,
-        as Git is a command line program.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo dnf install git</code>.
-      </p>
-    </div>
-  </div>
-</div> {% comment %} End of 'Git' section. {% endcomment %}
-
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
 
@@ -594,158 +523,16 @@ and our administrator may contact you if we need any extra information.</h4>
       </ol>
     </div>
   </div>
-{% comment %}
+
   <p>
   Once you are done installing the software listed above,
   please go to <a href="setup/index.html">this page</a>,
   which has instructions on how to test that everything was installed correctly.
   </p>
-{% endcomment %}
+
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
-<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
-  <h3>R</h3>
 
-  <p>
-    <a href="https://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="https://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
-        for example when installing R packages.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">macOS</h4>
-      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo dnf install R</code>).  Also, please install the
-        <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> {% comment %} End of 'R' section. {% endcomment %}
-
-<div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="https://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_installer}}">
-          {% if page.carpentry == "swc" %}
-          Software Carpentry
-          {% elsif page.carpentry == "dc" %}
-          Data Carpentry
-          {% elsif page.carpentry == "lc" %}
-          Library Carpentry
-          {% endif %}
-          Windows Installer
-	</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">macOS</h4>
-      <p>
-        SQLite comes pre-installed on macOS.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> {% comment %} End of 'SQLite' section. {% endcomment %}
-
-<div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
-  <h3>OpenRefine</h3>
-  <p>
-    For this lesson you will need <em>OpenRefine</em> and a
-    web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
-    It runs inside a web browser, but no web connection is needed.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="openrefine-windows">Windows</h4>
-      <p>
-        Check that you have either the Firefox or the Chrome browser installed and set as your default browser.
-        <strong>OpenRefine runs in your default browser.</strong>
-        It will not run correctly in Internet Explorer.
-      </p>
-      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a></p>
-      <p>Create a new directory called OpenRefine.</p>
-      <p>Unzip the downloaded file into the OpenRefine directory by right-clicking and selecting "Extract ...". </p>
-      <p>Go to your newly created OpenRefine directory.</p>
-      <p>Launch OpenRefine by clicking <code>google-refine.exe</code> (this will launch a command prompt window, but you can ignore that - just wait for OpenRefine to open in the browser).</p>
-      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="openrefine-mac">Mac</h4>
-      <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong> It may not run correctly in Safari.</p>
-      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
-      <p>Create a new directory called OpenRefine.</p>
-      <p>Unzip the downloaded file into the OpenRefine directory by double-clicking it.</p>
-      <p>Go to your newly created OpenRefine directory.</p>
-      <p>Launch OpenRefine by dragging the icon into the Applications folder.</p>
-      <p>Use <code>Ctrl-click/Open ... </code> to launch it.</p>
-      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="openrefine-linux">Linux</h4>
-      <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong></p>
-      <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
-      <p>Make a directory called OpenRefine.</p>
-      <p>Unzip the downloaded file into the OpenRefine directory.</p>
-      <p>Go to your newly created OpenRefine directory.</p>
-      <p>Launch OpenRefine by entering <code>./refine</code> into the terminal within the OpenRefine directory.</p>
-      <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-    </div>
-  </div>
-</div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
 
 {% comment %}
 <div id="vm">
