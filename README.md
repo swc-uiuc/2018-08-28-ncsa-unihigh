@@ -4,15 +4,12 @@ This is a Git repository for the Software Carpentry workshop for UniHigh student
 
 The webpage for the workshop is here: <https://swc-uiuc.github.io/2018-08-28-ncsa-unihigh/>
 
-## Workshop instructors
+## Workshop instructors / helpers
 
 * Samniqueka Halsey
 * Neal Davis
 * Maxim Belkin
 * Elizabeth Wickes
-
-## Workshop helpers
-
 * Madicken Munk
 * Dena Strong
 
